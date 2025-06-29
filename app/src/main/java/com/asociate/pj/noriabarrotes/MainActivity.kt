@@ -9,6 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.asociate.pj.noriabarrotes.login.LoginCompose
 import com.asociate.pj.noriabarrotes.ui.theme.NoriAbarrotesTheme
 import com.asociate.pj.noriabarrotes.ui.theme.primaryContainerLight
 
@@ -19,10 +20,9 @@ class MainActivity : ComponentActivity() {
             NoriAbarrotesTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = primaryContainerLight
+                    modifier = Modifier.fillMaxSize()
                 ) {
-                    Greeting("Android")
+                    LoginCompose()
                 }
             }
         }
